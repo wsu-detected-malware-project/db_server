@@ -1,0 +1,92 @@
+************************************************************
+DB 테이블 주의사항 2개 
+
+    VirtualAddress TEXT NOT NULL,
+    Size TEXT NOT NULL,
+
+
+    VVirtualAddress TEXT NOT NULL,
+    CCharacteristics TEXT NOT NULL,
+
+추후 AI서버에서 DB로 데이터를 보낼 때 주의.
+************************************************************
+
+CREATE TABLE DataPE (
+    filename TEXT PRIMARY KEY,
+    e_magic TEXT NOT NULL,
+    e_cblp TEXT NOT NULL,
+    e_cp TEXT NOT NULL,
+    e_crlc TEXT NOT NULL,
+    e_cparhdr TEXT NOT NULL,
+    e_minalloc TEXT NOT NULL,
+    e_maxalloc TEXT NOT NULL,
+    e_ss TEXT NOT NULL,
+    e_sp TEXT NOT NULL,
+    e_csum TEXT NOT NULL,
+    e_ip TEXT NOT NULL,
+    e_cs TEXT NOT NULL,
+    e_lfarlc TEXT NOT NULL,
+    e_res TEXT NOT NULL,
+    e_oemid TEXT NOT NULL,
+    e_oeminfo TEXT NOT NULL,
+    e_res2 TEXT NOT NULL,
+    e_lfanew TEXT NOT NULL,
+
+
+    Machine TEXT NOT NULL,
+    NumberOfSections TEXT NOT NULL,
+    TimeDateStamp TEXT NOT NULL,
+    PointerToSymbolTable TEXT NOT NULL,
+    NumberOfSymbols TEXT NOT NULL,
+    SizeOfOptionalHeader TEXT NOT NULL,
+    Characteristics TEXT NOT NULL,
+
+
+    VirtualAddress TEXT NOT NULL,
+    Size TEXT NOT NULL,
+
+
+    Magic TEXT NOT NULL,
+    MajorLinkerVersion TEXT NOT NULL,
+    MinorLinkerVersion TEXT NOT NULL,
+    SizeOfCode TEXT NOT NULL,
+    SizeOfInitializedData TEXT NOT NULL,
+    SizeOfUninitializedData TEXT NOT NULL,
+    AddressOfEntryPoint TEXT NOT NULL,
+    BaseOfCode TEXT NOT NULL,
+    BaseOfData TEXT NOT NULL,
+    ImageBase TEXT NOT NULL,
+    SectionAlignment TEXT NOT NULL,
+    FileAlignment TEXT NOT NULL,
+    MajorOperatingSystemVersion TEXT NOT NULL,
+    MinorOperatingSystemVersion TEXT NOT NULL,
+    MajorImageVersion TEXT NOT NULL,
+    MinorImageVersion TEXT NOT NULL,
+    MajorSubsystemVersion TEXT NOT NULL,
+    MinorSubsystemVersion TEXT NOT NULL,
+    Win32VersionValue TEXT NOT NULL,
+    SizeOfImage TEXT NOT NULL,
+    SizeOfHeaders TEXT NOT NULL,
+    CheckSum TEXT NOT NULL,
+    Subsystem TEXT NOT NULL,
+    DllCharacteristics TEXT NOT NULL,
+    SizeOfStackReserve TEXT NOT NULL,
+    SizeOfStackCommit TEXT NOT NULL,
+    SizeOfHeapReserve TEXT NOT NULL,
+    SizeOfHeapCommit TEXT NOT NULL,
+    LoaderFlags TEXT NOT NULL,
+    NumberOfRvaAndSizes TEXT NOT NULL,
+    DataDirectory TEXT NOT NULL,
+
+
+    Name TEXT NOT NULL,
+    VirtualSize TEXT NOT NULL,
+    VVirtualAddress TEXT NOT NULL,
+    SizeOfRawData TEXT NOT NULL,
+    PointerToRawData TEXT NOT NULL,
+    PointerToRelocations TEXT NOT NULL,
+    PointerToLinenumbers TEXT NOT NULL,
+    NumberOfRelocations TEXT NOT NULL,
+    NumberOfLinenumbers TEXT NOT NULL,
+    CCharacteristics TEXT NOT NULL,
+);
