@@ -1,3 +1,0 @@
-CREATE TABLE HE (
-    HashName TEST NULL
-);
